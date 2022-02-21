@@ -1,0 +1,202 @@
+{
+    "recommendations": [
+        {
+            "category": "Cost",
+            "typeId": "c320b790-2e58-452a-aa63-7b62c383ad8a",
+            "impact": "Medium",
+            "description": "Virtual Machine has been deallocated for long with disks still incurring costs"
+        },
+        {
+            "category": "Cost",
+            "typeId": "c84d5e86-e2d6-4d62-be7c-cecfbd73b0db",
+            "impact": "Medium",
+            "description": "Unattached disks (without owner VM) incur in unnecessary costs"
+        },
+        {
+            "category": "Cost",
+            "typeId": "dc3d2baa-26c8-435e-aa9d-edb2bfd6fff6",
+            "impact": "Medium",
+            "description": "Application Gateways without a backend pool incur in unnecessary costs"
+        },
+        {
+            "category": "Cost",
+            "typeId": "f1ed3bb2-3cb5-41e6-ba38-7001d5ff87f5",
+            "impact": "Medium",
+            "description": "Standard Load Balancers with rules defined and without a backend pool incur in unnecessary costs"
+        },
+        {
+            "category": "Cost",
+            "typeId": "ff68f4e5-1197-4be9-8e5f-8760d7863cb4",
+            "impact": "High",
+            "description": "Underused SQL Databases (performance capacity waste)"
+        },
+        {
+            "category": "Cost",
+            "typeId": "3125883f-8b9f-4bde-a0ff-6c739858c6e1",
+            "impact": "Low",
+            "description": "Orphaned Public IP (without owner resource) incur in unnecessary costs"
+        },
+        {
+            "category": "Cost",
+            "typeId": "a4955cc9-533d-46a2-8625-5c4ebd1c30d5",
+            "impact": "High",
+            "description": "VM Scale Set has been underutilized"
+        },
+        {
+            "category": "Cost",
+            "typeId": "4854b5dc-4124-4ade-879e-6a7bb65350ab",
+            "impact": "High",
+            "description": "Premium SSD disk has been underutilized"
+        },
+        {
+            "category": "HighAvailability",
+            "typeId": "255de20b-d5e4-4be5-9695-620b4a905774",
+            "impact": "High",
+            "description": "Availability Sets should have a fault domain count of 3 or equal or greater than half of the Virtual Machines count"
+        },
+        {
+            "category": "HighAvailability",
+            "typeId": "9764e285-2eca-46c5-b49e-649c039cf0cf",
+            "impact": "High",
+            "description": "Availability Sets should have an update domain count equal or greater than half of the Virtual Machines count"
+        },
+        {
+            "category": "HighAvailability",
+            "typeId": "e530029f-9b6a-413a-99ed-81af54502bb9",
+            "impact": "High",
+            "description": "Virtual Machines in unmanaged Availability Sets should not share the same Storage Account"
+        },
+        {
+            "category": "HighAvailability",
+            "typeId": "b70f44fa-5ef9-4180-b2f9-9cc6be07ab3e",
+            "impact": "Medium",
+            "description": "Virtual Machines with unmanaged disks should not share the same Storage Account"
+        },
+        {
+            "category": "HighAvailability",
+            "typeId": "998b50d8-e654-417b-ab20-a31cb11629c0",
+            "impact": "Medium",
+            "description": "Virtual Machines should be placed in an Availability Set together with other instances with the same role"
+        },
+        {
+            "category": "HighAvailability",
+            "typeId": "fe577af5-dfa2-413a-82a9-f183196c1f49",
+            "impact": "Medium",
+            "description": "Virtual Machines should not be the only instance in an Availability Set"
+        },
+        {
+            "category": "HighAvailability",
+            "typeId": "024049e7-f63a-4e1c-b620-f011aafbc576",
+            "impact": "Medium",
+            "description": "Each Virtual Machine should have its unmanaged disks stored in a single Storage Account for higher availability and manageability"
+        },
+        {
+            "category": "HighAvailability",
+            "typeId": "b576a069-b1f2-43a6-9134-5ee75376402a",
+            "impact": "High",
+            "description": "Virtual Machines should use Managed Disks for higher availability and manageability"
+        },
+        {
+            "category": "HighAvailability",
+            "typeId": "1bf03c4a-c402-4e6c-bf20-051b18af30e2",
+            "impact": "High",
+            "description": "Virtual Machine Scale Sets should use Managed Disks for higher availability and manageability"
+        },
+        {
+            "category": "HighAvailability",
+            "typeId": "1a77887c-7375-434e-af19-c2543171e0b8",
+            "impact": "High",
+            "description": "Virtual Machines should be placed in multiple Availability Zones"
+        },
+        {
+            "category": "HighAvailability",
+            "typeId": "47e5457c-b345-4372-b536-8887fa8f0298",
+            "impact": "High",
+            "description": "Virtual Machine Scale Sets should be placed in multiple Availability Zones"
+        },
+        {
+            "category": "Security",
+            "typeId": "ecd969c8-3f16-481a-9577-5ed32e5e1a1d",
+            "impact": "Medium",
+            "description": "Azure AD application with credentials expiration not set or too far in time"
+        },
+        {
+            "category": "Security",
+            "typeId": "b5491cde-f76c-4423-8c4c-89e3558ff2f2",
+            "impact": "Medium",
+            "description": "NSG rules referring to empty or inexisting subnets"
+        },
+        {
+            "category": "Security",
+            "typeId": "3dc1d1f8-19ef-4572-9c9d-78d62831f55a",
+            "impact": "Medium",
+            "description": "NSG rules referring to orphan or inexisting NICs"
+        },
+        {
+            "category": "Security",
+            "typeId": "fe40cbe7-bdee-4cce-b072-cf25e1247b7a",
+            "impact": "High",
+            "description": "NSG rules referring to orphan or inexisting Public IPs"
+        },
+        {
+            "category": "OperationalExcellence",
+            "typeId": "3292c489-2782-498b-aad0-a4cef50f6ca2",
+            "impact": "Medium",
+            "description": "Azure AD application with credentials expired or about to expire"
+        },
+        {
+            "category": "OperationalExcellence",
+            "typeId": "48619512-f4e6-4241-9c85-16f7c987950c",
+            "impact": "Medium",
+            "description": "Load Balancers without a backend pool are useless"
+        },
+        {
+            "category": "OperationalExcellence",
+            "typeId": "5292525b-5095-4e52-803e-e17192f1d099",
+            "impact": "Medium",
+            "description": "Subnets with a high IP space usage may constrain operations"
+        },
+        {
+            "category": "OperationalExcellence",
+            "typeId": "0f27b41c-869a-4563-86e9-d1c94232ba81",
+            "impact": "Medium",
+            "description": "Subnets with a low IP space usage are a waste of virtual network address space"
+        },
+        {
+            "category": "OperationalExcellence",
+            "typeId": "343bbfb7-5bec-4711-8353-398454d42b7b",
+            "impact": "Medium",
+            "description": "Subnets without any IP usage are a waste of virtual network address space"
+        },
+        {
+            "category": "OperationalExcellence",
+            "typeId": "4c5c2d0c-b6a4-4c59-bc18-6fff6c1f5b23",
+            "impact": "Medium",
+            "description": "Orphaned Network Interfaces (without owner VM or PE) unnecessarily consume IP address space"
+        },
+        {
+            "category": "OperationalExcellence",
+            "typeId": "c6a88d8c-3242-44b0-9793-c91897ef68bc",
+            "impact": "High",
+            "description": "Subscriptions close to the maximum limit of RBAC assignments"
+        },
+        {
+            "category": "OperationalExcellence",
+            "typeId": "b36dea3e-ef21-45a9-a704-6f629fab236d",
+            "impact": "High",
+            "description": "Management Groups close to the maximum limit of RBAC assignments"
+        },
+        {
+            "category": "OperationalExcellence",
+            "typeId": "4468da8d-1e72-4998-b6d2-3bc38ddd9330",
+            "impact": "High",
+            "description": "Subscriptions close to the maximum limit of resource groups"
+        },
+        {
+            "category": "Performance",
+            "typeId": "20a40c62-e5c8-4cc3-9fc2-f4ac75013182",
+            "impact": "Medium",
+            "description": "VM Scale Set performance has been constrained by lack of resources"
+        }
+    ]
+}
