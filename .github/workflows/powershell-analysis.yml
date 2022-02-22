@@ -19,7 +19,7 @@ on:
   #  - cron: '30 20 * * 3'
     
 jobs:
-  build:
+  SAST:
     name: PSScriptAnalyzer
     runs-on: ubuntu-latest
     steps:
@@ -41,3 +41,28 @@ jobs:
         uses: github/codeql-action/upload-sarif@v1
         with:
           sarif_file: results.sarif
+  
+  arm-validation:
+    runs-on: ubuntu-latest  
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Set up Python 3.8 for Checkov
+        uses: actions/setup-python@v1
+        with:
+          python-version: 3.8     
+
+      - name: Test with Checkov
+        id: checkov
+        uses: bridgecrewio/checkov-action@master
+        with:
+          directory: ./
+          framework: arm 
+          output_format: sarif
+          output_file: result_checkov.sarif
+          
+      # Upload the SARIF file generated in the previous step
+      - name: Upload SARIF results file
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: result_checkov.sarif
