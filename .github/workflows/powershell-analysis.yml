@@ -59,6 +59,7 @@ jobs:
           directory: ./
           framework: arm 
           output_format: sarif
+          soft_fail: on
           
       # Upload the SARIF file generated in the previous step
       - name: Upload SARIF results file
